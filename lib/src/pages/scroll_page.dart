@@ -65,9 +65,16 @@ class ScrollPage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       color: Color.fromRGBO(108, 192, 218, 1.0),
-      child: ElevatedButton(
-        child: Text('Bienvenidos'),
-        onPressed: () {},
+      child: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0)),
+            padding: EdgeInsets.symmetric(horizontal: 45.0, vertical: 20.0),
+          ),
+          child: Text('Bienvenidos', style: TextStyle(fontSize: 20.0)),
+          onPressed: () {},
+        ),
       ),
     );
   }
